@@ -11,13 +11,12 @@ html{
     font-size: 16px;
 }
 
-.container{
-    min-width: 910px;
-
-    margin: 0 auto;
-}
 
 /* utility */
+
+.container{
+    margin: 0 auto;
+}
 
 .clearfix::after{
     content: "";
@@ -33,10 +32,28 @@ html{
     float: right;
 }
 
+.pTop{
+    padding-top: 4rem;
+}
+
+.rel{
+    position: relative;
+}
+
 
 
 
 /* struct */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    min-width: 910px;
+
+    background-color: white;
+}
 
 header nav{
     list-style: none;
@@ -48,7 +65,8 @@ header nav{
 header ul{
     width: 50%;
 
-    font-size: .8rem;
+    font-size: 1rem;
+    font-weight: 500;
     
 }
 
@@ -68,6 +86,8 @@ header a{
     text-decoration: none;
 
     color: black;
+
+    line-height: normal;
 }
 
 header .logo{
@@ -79,8 +99,64 @@ header .logo{
 }
 
 .bluBtn{
+
+    display: inline-block;
+
     background-color: blue;
     color: white;
 
     padding: .5em 1em;
+
+    text-decoration: none;
+}
+
+.hero{
+    background-color: #b4d0e7;
+
+    height: 100vh;
+}
+
+.hero .container.pTop{
+    height: 100vh;
+}
+
+.hero .container{
+    max-width: 1300px;
+
+    margin-top: 4rem;
+}
+
+.hero h1{
+
+    text-align: left;
+
+    font-size: 6rem;
+    font-weight: 600;
+}
+
+.hero .info{
+    width: 35%;
+
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    padding-right: 4rem;
+}
+
+.hero p{
+    font-weight: 500;
+}
+
+.hero a{
+    margin-top: 2rem;
+}
+
+.hero img{
+    width: 65%;
+
+    float: left;
+}
+
+.hero .clearfix.rel{
+    top: 3rem;
 }
