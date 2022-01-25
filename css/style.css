@@ -8,5 +8,79 @@
 
 html{
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 0;
+    font-size: 16px;
+}
+
+.container{
+    min-width: 910px;
+
+    margin: 0 auto;
+}
+
+/* utility */
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+
+
+/* struct */
+
+header nav{
+    list-style: none;
+
+    line-height: 4rem;
+    
+}
+
+header ul{
+    width: 50%;
+
+    font-size: .8rem;
+    
+}
+
+header ul.right{
+    text-align: right;
+}
+
+header li{
+    display: inline-block;
+    vertical-align: middle;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+header a{
+    text-decoration: none;
+
+    color: black;
+}
+
+header .logo{
+    vertical-align: -7px;
+}
+
+.right li{
+    text-align: right;
+}
+
+.bluBtn{
+    background-color: blue;
+    color: white;
+
+    padding: .5em 1em;
 }
