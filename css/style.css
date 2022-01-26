@@ -37,6 +37,12 @@ html{
     float: right;
 }
 
+.middle{
+    margin: 2rem 2rem;
+
+    float: left;
+}
+
 .pTop{
     padding-top: 4rem;
 }
@@ -76,6 +82,10 @@ html{
 
 .inblock{
     display: inline-block;
+}
+
+.mrg-neg{
+    margin-right: -2rem;
 }
 
 
@@ -221,7 +231,7 @@ header .logo{
     margin-top: 2rem;
 }
 
-section>*+*{
+section .mrg-neg>*+*{
     margin-top: 2rem;
 }
 section.container{
@@ -245,11 +255,7 @@ section h2{
 }
 
 
-#section1{
-    margin-right: -2rem;
-}
-
-#section1 div.left .profile{
+#section1 div.left .profile, #section1 div.right .profile, #section1 div.middle .profile{
     display: inline-block;
     width: 100%;
 
@@ -260,11 +266,10 @@ section h2{
     vertical-align: middle;
 }
 
-#section1 div.left{
+#section1 div.left, #section1 div.right, #section1 div.middle{
     border: 1px solid lightgrey;
 
     text-align: center;
-
     
 }
 
@@ -277,12 +282,23 @@ section h2{
 }
 
 .table{
-    max-width: calc((100% / 3) - 4rem);
+    max-width: calc((100% / 3) - 2rem);
     min-width: 170px;
+
     margin-right: 2rem;
+
+    padding-bottom: 4rem;
 }
 
-.table>*+*{
+/* .table.right{
+    margin-left: 2rem;
+}
+
+.table.left{
+    margin-right: 2rem;
+} */
+
+.table .mrg-neg>*+*, .bigTable>*+*{
     margin-top: .5rem;
 }
 
@@ -338,4 +354,8 @@ section h2{
     padding-bottom: 2rem;
 
     border-bottom: 1px solid grey;
+}
+
+.bigTable{
+    width: calc(100% - 2rem);
 }
