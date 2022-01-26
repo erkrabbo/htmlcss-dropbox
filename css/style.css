@@ -53,6 +53,19 @@ html{
     margin-top: 2rem;
 }
 
+.radio{
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+
+    margin-right: .5rem;
+}
+
+.radio.Sel{
+    border: 4px solid blue;
+}
+
 
 
 
@@ -203,4 +216,32 @@ section h2{
     font-size: 3rem;
 
     font-weight: 00;
+}
+
+.selection div{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.selection .fatturazione{
+
+    margin-right: 2rem;
+}
+
+#section1 div.left .profile{
+    display: inline-block;
+    width: 100%;
+
+    border-bottom: 1px solid lightgrey;
+
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+#section1 div.left{
+    border: 1px solid lightgrey;
+
+    text-align: center;
+
+    
 }
