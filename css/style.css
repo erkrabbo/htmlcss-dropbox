@@ -74,6 +74,10 @@ html{
     text-align: left;
 }
 
+.inblock{
+    display: inline-block;
+}
+
 
 
 
@@ -215,7 +219,9 @@ header .logo{
     margin-top: 2rem;
 }
 
-
+section>*+*{
+    margin-top: 2rem;
+}
 section.container{
     padding: 0 7rem;
 }
@@ -255,6 +261,14 @@ section h2{
     
 }
 
+.subscription>* + *{
+    margin-top: 2.5rem;
+}
+
+.heading>*+*{
+    margin-top: .5em;
+}
+
 .table{
     width: calc((100% - 4rem) / 3);
     margin-right: 2rem;
@@ -264,18 +278,47 @@ section h2{
     margin-top: .5rem;
 }
 
-.pad-data h3{
+.subscription h3{
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-.pad-data h4{
+.subscription h4{
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.pad-data h5{
+.subscription h5{
     font-size: .9rem;
     
     color:grey;
+}
+
+.subscription ul{
+    list-style: none;
+}
+
+.subscription ul{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.subscription li{
+    margin-top: 1.5rem;
+
+    line-height: 1;
+    
+}
+
+.subscription li img{
+    max-width: 1rem;
+    height: 1em;
+
+    vertical-align: top;
+    margin-right: .2em;
+}
+
+.subscription li .inblock{
+    max-width: calc(100% - 1.4rem);
+    line-height: 1;
 }
