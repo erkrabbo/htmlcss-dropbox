@@ -16,6 +16,9 @@ html{
 
 .container{
     margin: 0 auto;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .clearfix::after{
@@ -40,6 +43,10 @@ html{
     position: relative;
 }
 
+.transl{
+    transform: translate(0, 5rem);
+}
+
 
 
 
@@ -48,9 +55,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 50;
 
     width: 100%;
-    min-width: 910px;
 
     background-color: white;
 }
@@ -110,27 +117,24 @@ header .logo{
     text-decoration: none;
 }
 
-.hero{
+.hero {
     background-color: #b4d0e7;
-
-    height: 100vh;
 }
 
-.hero .container.pTop{
-    height: 100vh;
-}
 
 .hero .container{
     max-width: 1300px;
 
     margin-top: 4rem;
+    
+    height: 40rem;
 }
 
 .hero h1{
 
     text-align: left;
 
-    font-size: 6rem;
+    font-size: 5.6rem;
     font-weight: 600;
 }
 
@@ -141,6 +145,7 @@ header .logo{
     line-height: 1.5rem;
 
     padding-right: 4rem;
+    
 }
 
 .hero p{
@@ -152,11 +157,13 @@ header .logo{
 }
 
 .hero img{
-    width: 65%;
+    max-width: 65%;
 
     float: left;
+
+    max-height: 28rem;
 }
 
-.hero .clearfix.rel{
-    top: 3rem;
+.hero .rel{
+    margin-top: 2rem;
 }
