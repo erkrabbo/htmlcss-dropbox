@@ -63,6 +63,10 @@ html{
     margin-top: 2rem;
 }
 
+.mrgTop-4{
+    margin-top: 4rem;
+}
+
 .radio{
     border: 1px solid lightgrey;
     border-radius: 50%;
@@ -255,7 +259,7 @@ section h2{
 }
 
 
-#section1 div.left .profile, #section1 div.right .profile, #section1 div.middle .profile{
+#section1 div.left .profile{
     display: inline-block;
     width: 100%;
 
@@ -266,7 +270,7 @@ section h2{
     vertical-align: middle;
 }
 
-#section1 div.left, #section1 div.right, #section1 div.middle{
+#section1 div.left{
     border: 1px solid lightgrey;
 
     text-align: center;
@@ -358,4 +362,17 @@ section h2{
 
 .bigTable{
     width: calc(100% - 2rem);
+}
+
+.bigTable .left{
+    margin-top: 2rem;
+
+    max-width:calc(70%);
+}
+
+.bigTable .bluBtn{
+    max-width: 30%;
+
+
+    transform: translate(0, -6rem);
 }
