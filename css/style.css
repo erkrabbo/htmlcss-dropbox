@@ -92,6 +92,23 @@ html{
     margin-right: -2rem;
 }
 
+.middleCont{
+    padding: 0 8rem;
+}
+
+.wid33{
+    max-width: calc(100% / 3);
+}
+
+.wid100{
+    max-width: 100%;
+}
+
+
+.left.wid33{
+    max-width: calc((100% / 3) - 2rem);
+    margin-right: 2rem;
+}
 
 
 
@@ -243,9 +260,9 @@ section.container{
 }
 
 section h2{
-    font-size: 3rem;
+    font-size: 2rem;
 
-    font-weight: 00;
+    font-weight: 600;
 }
 
 .selection div{
@@ -293,14 +310,6 @@ section h2{
 
     padding-bottom: 4rem;
 }
-
-/* .table.right{
-    margin-left: 2rem;
-}
-
-.table.left{
-    margin-right: 2rem;
-} */
 
 .table .mrg-neg>*+*, .bigTable>*+*{
     margin-top: .5rem;
@@ -370,9 +379,45 @@ section h2{
     max-width:calc(70%);
 }
 
+.enterInfo{
+    text-align: left;
+}
+
 .bigTable .bluBtn{
     max-width: 30%;
 
+    margin: 0;
+    
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+}
 
-    transform: translate(0, -6rem);
+.bigTable>*+*{
+    margin-top: 2rem;
+}
+
+.partner{
+    max-width: 50%;
+}
+
+#section2>div{
+    margin-top: 8rem;
+}
+
+#section2 div.partner{
+    padding: 2rem 1rem 0 2rem;
+}
+
+#section2 div p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#section2 div .bluBtn{
+    background-color: white;
+
+    border: 1px solid black;
+
+    color: black;
 }
