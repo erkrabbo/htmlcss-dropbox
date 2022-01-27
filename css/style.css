@@ -209,7 +209,7 @@ header{
     z-index: 50;
 
     width: 100%;
-    min-width: 1100px;
+    min-width: 1200px;
 
     background-color: white;
 }
@@ -224,13 +224,14 @@ header nav{
 header ul{
     width: 50%;
 
-    min-width: 600px;
-
     font-size: 1rem;
     font-weight: 500;
     
 }
 
+.min-600{
+    min-width: 600px;
+}
 header ul.right{
     text-align: right;
 }
@@ -253,6 +254,24 @@ header a{
     border-bottom: 2px solid white;
 }
 
+header li ul{
+    display: none;
+}
+
+header li:hover ul{
+    display: block;
+
+    position: absolute;
+
+    max-width: 11rem;
+    padding: 0;
+
+    margin-left: -1rem;
+
+    text-align: left;
+
+    background: white;
+}
 /* .hidden{
     display:inline-block;
     padding: 1em 1em;
