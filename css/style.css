@@ -684,3 +684,11 @@ footer span .fa-sort-up{
 
     color: black;
 }
+
+#section6 li p{
+    display: none;
+}
+#section6 li:hover p{
+
+    display: block;
+}
