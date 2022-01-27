@@ -10,7 +10,7 @@ html{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 16px;
 
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 /* utility */
@@ -240,12 +240,38 @@ header li{
 }
 
 header a{
+    display: inline-block;
+    padding: .5rem;
     text-decoration: none;
 
     color: black;
 
-    line-height: normal;
+    border-bottom: 2px solid white;
 }
+
+/* .hidden{
+    display:inline-block;
+    padding: 1em 1em;
+
+    color: black;
+
+    background-color: lightgrey;
+
+    position: absolute;
+    z-index: 50;
+
+    display: none;
+} */
+
+header a:hover{
+    border-bottom-color: blue;
+}
+
+/* header a:hover .hidden, header a ul:hover .hidden{
+    display: inline-block;
+} */
+
+
 
 header .logo{
     vertical-align: -7px;
@@ -267,6 +293,14 @@ header .logo{
     text-decoration: none;
 
     text-align: center;
+
+    line-height: 1;
+}
+
+.bluBtn:hover{
+    background-color: rgb(74, 64, 211);
+
+    border-bottom-color: white;
 }
 
 main.hero {
