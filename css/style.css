@@ -180,8 +180,14 @@ section .mrg-neg>*+*{
 }
 
 #section5{
+    background-color: #b4d0e7;
+}
+
+#section5, #section6{
+
     padding-top: 8rem;
     padding-bottom: 8rem;
+
 }
 header{
     position: fixed;
@@ -481,4 +487,15 @@ section h2{
 
 #section5 h2{
     max-width: 50%;
+}
+
+#section6 li{
+    width: 100%;
+    list-style: none;
+
+    padding:2rem 0;
+
+    border-bottom: 1px solid black;
+
+    font-size: 1rem;
 }
