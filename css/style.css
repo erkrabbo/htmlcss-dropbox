@@ -9,8 +9,9 @@
 html{
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 16px;
-}
 
+    /* scroll-behavior: smooth; */
+}
 
 /* utility */
 
@@ -47,6 +48,10 @@ html{
     padding-top: 4rem;
 }
 
+.pBot2{
+    padding-bottom: 2rem;
+}
+
 .pad-data{
     padding: 2rem 1rem;
 }
@@ -65,6 +70,10 @@ html{
 
 .mrgTop-4{
     margin-top: 4rem;
+}
+
+.mrgTop-8{
+    margin-top: 8rem;
 }
 
 .radio{
@@ -93,7 +102,8 @@ html{
 }
 
 .middleCont{
-    padding: 0 8rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 .wid33{
@@ -103,6 +113,7 @@ html{
 #section4{
     font-size: 0;
 }
+
 .sqr{
 
     display: inline-block;
@@ -130,10 +141,48 @@ html{
     margin-right: 2rem;
 }
 
+.bigUnder{
+    padding-bottom: 2rem;
+    
+    border-bottom: 1px solid grey;
+}
+/* margins */
 
+section .mrg-neg>*+*{
+    margin-top: 2rem;
+}
+
+.subscription>* + *{
+    margin-top: 3rem;
+}
+
+.heading>*+*{
+    margin-top: .5em;
+}
+
+.table .mrg-neg>*+*, .bigTable>*+*{
+    margin-top: .5rem;
+}
+
+.bigTable>*+*{
+    margin-top: 2rem;
+}
+
+#section3 .wid33{
+    margin-top: 4rem;
+}
 
 
 /* struct */
+
+#section1, #section2, #section3, #section4{
+    margin-top: 8rem;
+}
+
+#section5{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
 header{
     position: fixed;
     top: 0;
@@ -203,7 +252,9 @@ header .logo{
     text-align: center;
 }
 
-.hero {
+main.hero {
+
+    width: 100%;
     background-color: #b4d0e7;
 
     margin-bottom: 8rem;
@@ -272,15 +323,12 @@ header .logo{
     margin-top: 2rem;
 }
 
-section .mrg-neg>*+*{
-    margin-top: 2rem;
-}
 section.container{
     padding: 0 7rem;
 }
 
 section h2{
-    font-size: 2rem;
+    font-size: 3rem;
 
     font-weight: 600;
 }
@@ -314,13 +362,6 @@ section h2{
     
 }
 
-.subscription>* + *{
-    margin-top: 3rem;
-}
-
-.heading>*+*{
-    margin-top: .5em;
-}
 
 .table{
     max-width: calc((100% / 3) - 2rem);
@@ -329,10 +370,6 @@ section h2{
     margin-right: 2rem;
 
     padding-bottom: 4rem;
-}
-
-.table .mrg-neg>*+*, .bigTable>*+*{
-    margin-top: .5rem;
 }
 
 .subscription h3{
@@ -383,11 +420,6 @@ section h2{
     width: 100%;
 }
 
-.subscription>.inblock{
-    padding-bottom: 2rem;
-
-    border-bottom: 1px solid grey;
-}
 
 .bigTable{
     width: calc(100% - 2rem);
@@ -413,17 +445,10 @@ section h2{
     right: 2rem;
 }
 
-.bigTable>*+*{
-    margin-top: 2rem;
-}
-
 .partner{
     max-width: 50%;
 }
 
-#section2>div{
-    margin-top: 8rem;
-}
 
 #section2 div.partner{
     padding: 2rem 1rem 0 2rem;
@@ -440,4 +465,20 @@ section h2{
     border: 1px solid black;
 
     color: black;
+}
+
+#section4 .middleCont h2{
+    width: 70%
+}
+
+#section4 a{
+    display: inline-block;
+    font-size: 1rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#section5 h2{
+    max-width: 50%;
 }
