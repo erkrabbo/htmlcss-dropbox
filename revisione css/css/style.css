@@ -328,9 +328,7 @@ main.hero {
 }
 
 .hero img{
-    max-height: 28rem;
-
-    position: absolute;
+    max-width: 65%;
 }
 
 .hero .rel{
