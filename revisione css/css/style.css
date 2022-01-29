@@ -383,7 +383,7 @@ main.hero {
 }
 
 .table{
-    max-width: calc((100% / 3) - 2rem);
+    width: calc((100% / 3) - 2rem);
 
     margin-right: 2rem;
 
